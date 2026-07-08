@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>О сайте</title>
-    <link rel="stylesheet" href="i don't know.css">
+    <link rel="stylesheet" href="i don't know.css" />
 </head>
 <body>
-
     <div class="container">
-        
-         <nav>
-            <a href="index.html">Главная</a>
-            <a href="about.html">О сайте</a>
-            <a href="catalog.html">Коллекция</a>
-            <b style="float: left;">GameRadar</b>
-        </nav>
 
-       
-        
-        <h3 style="color: white; margin-top: 0;">О сайте</h3>
-        
-            Этот сайт создан для тех, кто полчаса листает список игр, устает и в итоге идет просто смотреть видосики на YouTube.
-Мы спасём твой вечер🎮
-<h3 style="color: white; margin-top: 30px;">💬 Часто задаваемые вопросы</h3>
-<p style="font-size: 16px; color: #cbd5e1; margin-bottom: 5px;"><b>Вопрос:</b> Как ваш фильтр находит игры?</p>
-<p style="font-size: 15px; color: #94a3b8; margin-bottom: 15px;"><b>Ответ:</b> С помощью магии, геймерской интуиции и щепотки удачи.</p>
+        <!-- Шапка с навигацией -->
+        <header class="header">
+            <nav class="nav">
+                <span class="logo">GameRadar</span>
+                <div class="nav-links">
+                    <a href="index.html">Главная</a>
+                    <a href="about.html">О сайте</a>
+                    <a href="catalog.html">Коллекция</a>
+                </div>
+            </nav>
+        </header>
 
-<p style="font-size: 16px; color: #cbd5e1; margin-bottom: 5px;"><b>Вопрос:</b> Можно ли добавить свою игру на сайт?</p>
-<p style="font-size: 15px; color: #94a3b8; margin-bottom: 0;"><b>Ответ:</b> Да, если она реально крутая. Напиши нам на почту, и мы посмотрим её на стриме.</p>
+        <!-- Основной контент -->
+        <main class="main about-page">
 
-            
-            
-       
+            <!-- Блок "О сайте" -->
+            <section class="about-content">
+                <h3 class="about-title">О сайте</h3>
+                <p class="about-text">
+                    Этот сайт создан для тех, кто полчаса листает список игр, устает и в итоге идет просто смотреть видосики на YouTube.
+                    Мы спасём твой вечер 🎮
+                </p>
 
+                <h3 class="about-title support-title">Поддержка</h3>
+                <p class="support-text">
+                    Если вы нашли баг на сайте или у вас есть предложения по улучшению радара, свяжитесь с нами:
+                </p>
+
+                <ul class="contact-list">
+                    <li><b>E-mail:</b> support@mygameradar.com</li>
+                    <li><b>Телефон:</b> +375 (25) 944-24-42</li>
+                    <li><b>Время работы:</b> 24/7 (без перерывов на сон и сложные катки)</li>
+                </ul>
+            </section>
+
+        </main>
+
+        <!-- Подвал -->
+        <footer class="footer">
+            <p>&copy; 2026 GameRadar</p>
+        </footer>
+
+    </div>
 </body>
 </html>
