@@ -92,6 +92,7 @@ nav {
 /* ====================================================
    ЛЕВАЯ И ПРАВАЯ КОЛОНКИ
    ==================================================== */
+/* ===== ЛЕВАЯ И ПРАВАЯ КОЛОНКИ ===== */
 .game-item {
     margin-bottom: 25px;
 }
@@ -113,21 +114,12 @@ nav {
     font-weight: 500;
 }
 
-.left-column h3,
-.right-column h3,
-.news h3 {
-    color: white;
-    margin-bottom: 20px;
-    font-size: 18px;
-    border-bottom: 2px solid #EA5455;
-    padding-bottom: 10px;
+/* ===== ПРАВАЯ КОЛОНКА - КАРТИНКИ ПРИЖАТЫ ВПРАВО ===== */
+.right-column .game-item img {
+    margin-left: auto;
 }
 
 .right-column .game-item p {
-    text-align: right;
-}
-
-.right-column h3 {
     text-align: right;
 }
 
