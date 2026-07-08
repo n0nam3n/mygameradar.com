@@ -191,6 +191,7 @@ nav {
 .button-group input[type="button"] {
     padding: 5px 12px;
     height: 25px;
+    width: 50px; 
     background: #EA5455;
     border: none;
     border-radius: 7px;
