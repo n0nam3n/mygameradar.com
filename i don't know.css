@@ -1,3 +1,381 @@
+/* ===== ОБЩИЕ СТИЛИ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2C4059;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ===== КРАСИВАЯ ШАПКА ===== */
+.header {
+    margin-bottom: 30px;
+}
+
+nav {
+    background-color: #EA5455;
+    padding: 15px 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-links a.active {
+    background: rgba(255, 255, 255, 0.3);
+    text-decoration: underline;
+}
+
+/* ===== ОСНОВНЫЕ КОЛОНКИ (ГЛАВНАЯ) ===== */
+.main {
+    display: flex;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+}
+
+.left-column,
+.right-column {
+    flex: 1.2;
+}
+
+.center-column {
+    flex: 2;
+}
+
+/* ===== ЛЕВАЯ И ПРАВАЯ КОЛОНКИ ===== */
+.game-item {
+    margin-bottom: 25px;
+}
+
+.game-item img {
+    display: block;
+    margin-bottom: 5px;
+    width: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.game-item img:hover {
+    transform: scale(1.05);
+}
+
+.game-item p {
+    color: white;
+    font-weight: 500;
+}
+
+.left-column h3,
+.right-column h3,
+.news h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #EA5455;
+    padding-bottom: 10px;
+}
+
+.right-column .game-item p {
+    text-align: right;
+}
+
+.right-column h3 {
+    text-align: right;
+}
+
+/* ===== ЦЕНТРАЛЬНАЯ КОЛОНКА (ФИЛЬТРЫ) ===== */
+.filters {
+    text-align: center;
+    padding-top: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.filters p {
+    margin-bottom: 12px;
+}
+
+.filters select {
+    width: 200px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background: #1f334a;
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.filters input[type="radio"] {
+    margin: 0 5px 0 10px;
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.button-group input[type="button"] {
+    padding: 10px 20px;
+    height: 40px;
+    background: #1f334a;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-group input[type="button"]:hover {
+    background: #EA5455;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(234, 84, 85, 0.4);
+}
+
+.btn-primary {
+    height: 35px;
+    width: 140px;
+    background: #EA5455;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.btn-primary:hover {
+    background: #c73a3b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(234, 84, 85, 0.5);
+}
+
+/* ===== НОВОСТИ ===== */
+.news {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.news-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.news-item img {
+    display: block;
+    margin-bottom: 8px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.news-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.news-item a:hover {
+    color: #EA5455;
+}
+
+/* ===== СТРАНИЦА РЕЗУЛЬТАТА (СТИЛЬ КАК У S.T.A.L.K.E.R.) ===== */
+.result-page {
+    display: block;
+}
+
+.result-content {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 35px;
+}
+
+.game-result {
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.result-image {
+    flex-shrink: 0;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.result-info {
+    flex: 1;
+}
+
+.game-title {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.game-title b {
+    color: #EA5455;
+}
+
+.game-description {
+    color: #d1d1d1;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* ТЕГИ В СТИЛЕ S.T.A.L.K.E.R. - СПИСОК С ТОЧКАМИ */
+.result-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.tag-item {
+    color: white;
+    font-size: 15px;
+    padding: 3px 0;
+}
+
+.tag-item::before {
+    content: "• ";
+    color: #EA5455;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ===== СТРАНИЦА "О САЙТЕ" ===== */
+.about-page {
+    display: block;
+}
+
+.about-content {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.about-title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #EA5455;
+    padding-bottom: 10px;
+}
+
+.about-text {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.support-title {
+    margin-top: 10px;
+}
+
+.faq-item {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #EA5455;
+}
+
+.faq-question {
+    color: #EA5455;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    color: #d1d1d1;
+    font-size: 15px;
+}
+
+.support-text {
+    color: #d1d1d1;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.contact-list {
+    color: white;
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+.contact-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-list li:last-child {
+    border-bottom: none;
+}
+
 /* ===== СТРАНИЦА "КОЛЛЕКЦИЯ" ===== */
 .catalog-page {
     display: block;
@@ -62,4 +440,19 @@
 
 .game-card a img {
     display: block;
+}
+
+/* ===== ПОДВАЛ ===== */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    color: #999;
+    font-size: 14px;
+}
+
+.footer p:hover {
+    color: #EA5455;
+    transition: color 0.3s ease;
 }
