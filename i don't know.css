@@ -135,69 +135,99 @@ nav {
 
 .filters p {
     margin-bottom: 12px;
+    color: white;
+    font-size: 16px;
 }
 
+/* ===== ВЫПАДАЮЩИЙ СПИСОК (ЯЗЫК) ===== */
 .filters select {
     width: 200px;
-    padding: 8px;
-    border-radius: 8px;
-    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #EA5455;
     background: #1f334a;
     color: white;
-    margin-bottom: 10px;
+    font-size: 16px;
     cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.filters select:hover {
+    border-color: #c73a3b;
+    box-shadow: 0 0 15px rgba(234, 84, 85, 0.3);
+}
+
+.filters select option {
+    background: #1f334a;
+    color: white;
+    padding: 10px;
 }
 
 .filters input[type="radio"] {
     margin: 0 5px 0 10px;
     cursor: pointer;
+    accent-color: #EA5455;
+    width: 16px;
+    height: 16px;
 }
 
+/* ===== ВСЕ КНОПКИ - КРАСНЫЕ КАК "ВЫБИТЬ ИГРУ" ===== */
 .button-group {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
     margin: 15px 0;
 }
 
 .button-group input[type="button"] {
-    padding: 10px 20px;
+    padding: 10px 25px;
     height: 40px;
-    background: #1f334a;
+    background: #EA5455;
     border: none;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 16px;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(234, 84, 85, 0.3);
 }
 
 .button-group input[type="button"]:hover {
-    background: #EA5455;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(234, 84, 85, 0.4);
+    background: #c73a3b;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(234, 84, 85, 0.5);
 }
 
+/* ===== КНОПКА "ВЫБИТЬ ИГРУ" ===== */
 .btn-primary {
-    height: 35px;
-    width: 140px;
+    height: 40px;
+    width: 150px;
     background: #EA5455;
     border: none;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 5px;
+    box-shadow: 0 4px 10px rgba(234, 84, 85, 0.3);
 }
 
 .btn-primary:hover {
     background: #c73a3b;
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(234, 84, 85, 0.5);
+    box-shadow: 0 6px 20px rgba(234, 84, 85, 0.5);
 }
 
 /* ===== НОВОСТИ ===== */
@@ -238,7 +268,6 @@ nav {
     color: #EA5455;
 }
 
-/* ===== СТРАНИЦА РЕЗУЛЬТАТА (СТИЛЬ КАК У S.T.A.L.K.E.R.) ===== */
 /* ===== СТРАНИЦА РЕЗУЛЬТАТА ===== */
 .result-page {
     display: block;
@@ -284,7 +313,7 @@ nav {
     font-size: 15px;
 }
 
-/* ===== ТЕГИ - ВСЕГДА КРАСНЫЕ (БЕЗ ЭФФЕКТА НАВЕДЕНИЯ) ===== */
+/* ===== ТЕГИ НА СТРАНИЦЕ РЕЗУЛЬТАТА - КРАСНЫЕ КНОПКИ ===== */
 .result-tags {
     display: flex;
     flex-wrap: wrap;
@@ -293,14 +322,22 @@ nav {
 }
 
 .tag-item {
-    color: #EA5455;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #EA5455;
+    color: white;
     font-size: 15px;
     font-weight: bold;
-    padding: 4px 0;
+    border-radius: 10px;
+    cursor: default;
+    box-shadow: 0 4px 10px rgba(234, 84, 85, 0.3);
+    transition: all 0.3s ease;
 }
 
 .tag-item:hover {
-    color: #EA5455; /* ОСТАЁТСЯ КРАСНЫМ ДАЖЕ ПРИ НАВЕДЕНИИ */
+    background: #c73a3b;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(234, 84, 85, 0.5);
 }
 
 /* ===== СТРАНИЦА "О САЙТЕ" ===== */
