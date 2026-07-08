@@ -189,18 +189,18 @@ nav {
 }
 
 .button-group input[type="button"] {
-    padding: 6px 14px;
-    height: 30px;
-    width: 105px; 
+    padding: 5px 10px;
+    height: 28px;
+    width: auto; 
     background: #EA5455;
     border: none;
-    border-radius: 8px;
-    font-size: 14px;
+    border-radius: 6px;
+    font-size: 13px;
     color: white;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 8px rgba(234, 84, 85, 0.3);
+    box-shadow: 0 2px 6px rgba(234, 84, 85, 0.3);
 }
 
 .button-group input[type="button"]:hover {
