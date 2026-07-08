@@ -191,11 +191,11 @@ nav {
 .button-group input[type="button"] {
     padding: 10px 25px;
     height: 40px;
-    background: #EA5455 !important;
+    background: #EA5455;
     border: none;
     border-radius: 10px;
     font-size: 16px;
-    color: white !important;
+    color: white;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -203,7 +203,7 @@ nav {
 }
 
 .button-group input[type="button"]:hover {
-    background: #c73a3b !important;
+    background: #c73a3b;
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(234, 84, 85, 0.5);
 }
@@ -338,6 +338,55 @@ nav {
     background: #c73a3b;
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(234, 84, 85, 0.5);
+}
+
+/* ===== СТРАНИЦА СТАТЬИ / НОВОСТИ ===== */
+.game-page {
+    display: block;
+}
+
+.game-content {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 35px;
+}
+
+.game-article {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.article-image {
+    flex-shrink: 0;
+    border-radius: 12px;
+    width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.article-info {
+    flex: 1;
+}
+
+.article-title {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.article-text {
+    color: #d1d1d1;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.article-text.quote {
+    color: #d1d1d1;
+    padding-left: 20px;
+    border-left: 3px solid #EA5455;
+    margin-bottom: 15px;
 }
 
 /* ===== СТРАНИЦА "О САЙТЕ" ===== */
