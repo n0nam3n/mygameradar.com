@@ -58,10 +58,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-2px);
-}
 
 .nav-links a.active {
     background: rgba(255, 255, 255, 0.3);
@@ -193,12 +189,12 @@ nav {
 }
 
 .button-group input[type="button"] {
-    padding: 10px 25px;
-    height: 40px;
+    padding: 5px 112px;
+    height: 25px;
     background: #EA5455;
     border: none;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 7px;
+    font-size: 12px;
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -340,11 +336,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-.tag-item:hover {
-    background: #c73a3b;
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(234, 84, 85, 0.5);
-}
+
 
 /* ====================================================
    СТРАНИЦА СТАТЬИ / НОВОСТИ (game.html, news2.html, news3.html)
@@ -531,7 +523,6 @@ nav {
 
 .game-card img:hover {
     transform: scale(1.08);
-    border-color: #EA5455;
     box-shadow: 0 4px 20px rgba(234, 84, 85, 0.3);
 }
 
