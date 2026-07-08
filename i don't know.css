@@ -239,6 +239,7 @@ nav {
 }
 
 /* ===== СТРАНИЦА РЕЗУЛЬТАТА (СТИЛЬ КАК У S.T.A.L.K.E.R.) ===== */
+/* ===== СТРАНИЦА РЕЗУЛЬТАТА ===== */
 .result-page {
     display: block;
 }
@@ -283,25 +284,23 @@ nav {
     font-size: 15px;
 }
 
-/* ТЕГИ В СТИЛЕ S.T.A.L.K.E.R. - СПИСОК С ТОЧКАМИ */
+/* ===== ТЕГИ - ВСЕГДА КРАСНЫЕ (БЕЗ ЭФФЕКТА НАВЕДЕНИЯ) ===== */
 .result-tags {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .tag-item {
-    color: white;
+    color: #EA5455;
     font-size: 15px;
-    padding: 3px 0;
+    font-weight: bold;
+    padding: 4px 0;
 }
 
-.tag-item::before {
-    content: "• ";
-    color: #EA5455;
-    font-weight: bold;
-    font-size: 18px;
+.tag-item:hover {
+    color: #EA5455; /* ОСТАЁТСЯ КРАСНЫМ ДАЖЕ ПРИ НАВЕДЕНИИ */
 }
 
 /* ===== СТРАНИЦА "О САЙТЕ" ===== */
