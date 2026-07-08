@@ -8,94 +8,119 @@
 <body>
     <div class="container">
 
-        <!-- Шапка с навигацией -->
         <header class="header">
-            <nav class="nav">
+            <nav>
                 <span class="logo">GameRadar</span>
                 <div class="nav-links">
                     <a href="index.html">Главная</a>
                     <a href="about.html">О сайте</a>
-                    <a href="catalog.html">Коллекция</a>
+                    <a href="catalog.html" class="active">Коллекция</a>
                 </div>
             </nav>
         </header>
 
-        <!-- Основной контент -->
         <main class="main catalog-page">
-
             <section class="catalog-content">
 
-                <!-- Первый ряд: названия -->
+                <!-- РЯД 1 -->
                 <div class="catalog-row">
-                    <span class="game-name">Minecraft</span>
-                    <span class="game-name">S.T.A.L.K.E.R</span>
-                    <span class="game-name">Sniper Elite</span>
-                    <span class="game-name">Doom</span>
-                    <span class="game-name">Car Mechanic Simulator 2021</span>
-                    <span class="game-name">Plants vs. Zombies</span>
-                    <span class="game-name">City Car Driving</span>
+                    <div class="game-card">
+                        <span class="game-name">Minecraft</span>
+                        <img src="Minecraft.png" alt="Minecraft" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">S.T.A.L.K.E.R</span>
+                        <a href="game.html"><img src="Stalk.png" alt="S.T.A.L.K.E.R" /></a>
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Sniper Elite</span>
+                        <img src="Sniper.png" alt="Sniper Elite" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Doom</span>
+                        <img src="DOOM.png" alt="Doom" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Car Mechanic<br>Simulator 2021</span>
+                        <img src="car_mechanic_simulator_2021.PNG" alt="Car Mechanic Simulator 2021" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Plants vs.<br>Zombies</span>
+                        <img src="PlantsvsZombiesCoverArt.png" alt="Plants vs. Zombies" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">City Car<br>Driving</span>
+                        <img src="City Car Driving.png" alt="City Car Driving" />
+                    </div>
                 </div>
 
-                <!-- Первый ряд: картинки -->
+                <!-- РЯД 2 -->
                 <div class="catalog-row">
-                    <img src="Minecraft.png" alt="Minecraft" />
-                    <a href="game.html"><img src="Stalk.png" alt="S.T.A.L.K.E.R" /></a>
-                    <img src="Sniper.png" alt="Sniper Elite" />
-                    <img src="DOOM.png" alt="Doom" />
-                    <img src="car_mechanic_simulator_2021.PNG" alt="Car Mechanic Simulator 2021" />
-                    <img src="PlantsvsZombiesCoverArt.png" alt="Plants vs. Zombies" />
-                    <img src="City Car Driving.png" alt="City Car Driving" />
+                    <div class="game-card">
+                        <span class="game-name">House Flipper</span>
+                        <img src="House_Flipper_2.png" alt="House Flipper" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Counter-<br>Strike 2</span>
+                        <img src="CS_2.png" alt="Counter-Strike 2" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Truck<br>Simulator 2</span>
+                        <img src="Truck_Simulator_2.png" alt="Truck Simulator 2" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Crossout</span>
+                        <img src="Crossout.png" alt="Crossout" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Half-Life 2</span>
+                        <img src="Half-Life_2.png" alt="Half-Life 2" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Метро 2033</span>
+                        <img src="Metro.png" alt="Метро 2033" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Peak</span>
+                        <img src="Peak.png" alt="Peak" />
+                    </div>
                 </div>
 
-                <!-- Второй ряд: названия -->
+                <!-- РЯД 3 -->
                 <div class="catalog-row">
-                    <span class="game-name">House Flipper</span>
-                    <span class="game-name">Counter-Strike 2</span>
-                    <span class="game-name">Truck Simulator 2</span>
-                    <span class="game-name">Crossout</span>
-                    <span class="game-name">Half-Life 2</span>
-                    <span class="game-name">Метро 2033</span>
-                    <span class="game-name">Peak</span>
-                </div>
-
-                <!-- Второй ряд: картинки -->
-                <div class="catalog-row">
-                    <img src="House_Flipper_2.png" alt="House Flipper" />
-                    <img src="CS_2.png" alt="Counter-Strike 2" />
-                    <img src="Truck_Simulator_2.png" alt="Truck Simulator 2" />
-                    <img src="Crossout.png" alt="Crossout" />
-                    <img src="Half-Life_2.png" alt="Half-Life 2" />
-                    <img src="Metro.png" alt="Метро 2033" />
-                    <img src="Peak.png" alt="Peak" />
-                </div>
-
-                <!-- Третий ряд: названия -->
-                <div class="catalog-row">
-                    <span class="game-name">Forza Horizon 6</span>
-                    <span class="game-name">Terraria</span>
-                    <span class="game-name">Fallout</span>
-                    <span class="game-name">Red Dead Redemption 2</span>
-                    <span class="game-name">Stumble Guys</span>
-                    <span class="game-name">War Thunder</span>
-                    <span class="game-name">The Forest</span>
-                </div>
-
-                <!-- Третий ряд: картинки -->
-                <div class="catalog-row">
-                    <img src="Forza_Horizon6.png" alt="Forza Horizon 6" />
-                    <img src="Terraria.png" alt="Terraria" />
-                    <img src="Fallout.png" alt="Fallout" />
-                    <img src="Red_Dead_Redemption_2.png" alt="Red Dead Redemption 2" />
-                    <img src="Stumble_Guys.png" alt="Stumble Guys" />
-                    <img src="War_Thunder.png" alt="War Thunder" />
-                    <img src="The_Forest.png" alt="The Forest" />
+                    <div class="game-card">
+                        <span class="game-name">Forza<br>Horizon 6</span>
+                        <img src="Forza_Horizon6.png" alt="Forza Horizon 6" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Terraria</span>
+                        <img src="Terraria.png" alt="Terraria" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Fallout</span>
+                        <img src="Fallout.png" alt="Fallout" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Red Dead<br>Redemption 2</span>
+                        <img src="Red_Dead_Redemption_2.png" alt="Red Dead Redemption 2" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">Stumble Guys</span>
+                        <img src="Stumble_Guys.png" alt="Stumble Guys" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">War Thunder</span>
+                        <img src="War_Thunder.png" alt="War Thunder" />
+                    </div>
+                    <div class="game-card">
+                        <span class="game-name">The Forest</span>
+                        <img src="The_Forest.png" alt="The Forest" />
+                    </div>
                 </div>
 
             </section>
-
         </main>
 
-        <!-- Подвал -->
         <footer class="footer">
             <p>&copy; 2026 GameRadar</p>
         </footer>
