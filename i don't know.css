@@ -191,11 +191,11 @@ nav {
 .button-group input[type="button"] {
     padding: 10px 25px;
     height: 40px;
-    background: #EA5455;
+    background: #EA5455 !important;
     border: none;
     border-radius: 10px;
     font-size: 16px;
-    color: white;
+    color: white !important;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -203,7 +203,7 @@ nav {
 }
 
 .button-group input[type="button"]:hover {
-    background: #c73a3b;
+    background: #c73a3b !important;
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(234, 84, 85, 0.5);
 }
