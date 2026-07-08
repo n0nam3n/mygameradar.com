@@ -191,7 +191,7 @@ nav {
 .button-group input[type="button"] {
     padding: 6px 14px;
     height: 30px;
-    width: 100px; 
+    width: 105px; 
     background: #EA5455;
     border: none;
     border-radius: 8px;
@@ -514,7 +514,7 @@ nav {
 .game-card img {
     width: 100%;
     max-width: 130px;
-    height: auto;
+    height: 227px;
     border-radius: 8px;
     transition: all 0.3s ease;
     max-height: 200px;
