@@ -59,10 +59,10 @@ nav {
 }
 
 
-.nav-links a.active {
-    background: rgba(255, 255, 255, 0.3);
+/*.nav-links a.active {
+    background: transparent;
     text-decoration: none;
-}
+}*/
 
 /* ====================================================
    ОСНОВНЫЕ КОЛОНКИ (ДЛЯ ГЛАВНОЙ)
@@ -189,24 +189,24 @@ nav {
 }
 
 .button-group input[type="button"] {
-    padding: 5px 12px;
-    height: 25px;
-    width: 20px; 
+    padding: 5px 10px;
+    height: 28px;
+    width: 75px; 
     background: #EA5455;
     border: none;
-    border-radius: 7px;
+    border-radius: 66px;
     font-size: 12px;
     color: white;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(234, 84, 85, 0.3);
+    box-shadow: 0 3px 8px rgba(234, 84, 85, 0.3);
 }
 
 .button-group input[type="button"]:hover {
     background: #c73a3b;
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(234, 84, 85, 0.5);
+    box-shadow: 0 4px 15px rgba(234, 84, 85, 0.5);
 }
 
 .btn-primary {
@@ -523,8 +523,9 @@ nav {
 }
 
 .game-card img:hover {
-    transform: scale(1.08);
-    box-shadow: 0 4px 20px rgba(234, 84, 85, 0.3);
+    transform: scale(1.05);
+    box-shadow: none;
+    border-color: transparent;
 }
 
 .game-card a img {
