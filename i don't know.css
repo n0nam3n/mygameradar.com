@@ -5,6 +5,262 @@ body {
     margin: 0;
     padding: 20px;
 }
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a2e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка */
+.header {
+    margin-bottom: 30px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #16213e;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #e94560;
+}
+
+/* Основные колонки (для главной) */
+.main {
+    display: flex;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+}
+
+.left-column,
+.right-column {
+    flex: 1.2;
+}
+
+.center-column {
+    flex: 2;
+}
+
+/* Левый и правый блоки (игры) */
+.game-item {
+    margin-bottom: 25px;
+}
+
+.game-item img {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.game-item p {
+    color: white;
+    font-weight: 500;
+}
+
+.left-column h3,
+.right-column h3,
+.news h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.right-column .game-item p {
+    text-align: right;
+}
+
+.right-column h3 {
+    text-align: right;
+}
+
+/* Центр — фильтры */
+.filters {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.filters p {
+    margin-bottom: 12px;
+}
+
+.filters select {
+    width: 200px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.filters input[type="radio"] {
+    margin: 0 5px 0 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 15px 0;
+}
+
+.button-group input[type="button"] {
+    width: auto;
+    padding: 8px 18px;
+    height: 35px;
+    background-color: #b0b0b0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button-group input[type="button"]:hover {
+    background-color: #d0d0d0;
+}
+
+.btn-primary {
+    height: 30px;
+    width: 130px;
+    background-color: #b0b0b0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #d0d0d0;
+}
+
+/* Новости */
+.news-item {
+    margin-bottom: 25px;
+}
+
+.news-item img {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.news-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* ===== СТИЛИ ДЛЯ СТРАНИЦЫ РЕЗУЛЬТАТА ===== */
+.result-page {
+    display: block;
+}
+
+.result-content {
+    background: #16213e;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.game-result {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.result-image {
+    flex-shrink: 0;
+    border-radius: 8px;
+}
+
+.result-info {
+    flex: 1;
+}
+
+.game-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.game-description {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.result-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-btn {
+    height: 35px;
+    background-color: #b0b0b0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 18px;
+    transition: 0.2s;
+}
+
+.tag-btn:hover {
+    background-color: #d0d0d0;
+}
+
+.tag-btn.wide {
+    width: 230px;
+}
+
+/* Подвал */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #333;
+    color: #aaa;
+    font-size: 14px;
+}
+
 /* Общие стили */
 * {
     margin: 0;
